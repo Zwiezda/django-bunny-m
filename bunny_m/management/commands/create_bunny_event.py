@@ -15,6 +15,9 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options) -> None:  # pragma: no cover
         event_name = options.get(self.EVENT_NAME_ARG)
+        if not event_name:
+            self.stderr.write(f"Arg event_name is required!")
+            return
         generator = Generator(event_name)
         try:
             generator.check_event(generator.get_event_path())
