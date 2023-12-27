@@ -7,7 +7,7 @@ using RabbitMQ. Particularly useful when creating a microservice ecosystem
 
 
 Quick start
------------
+------------
 1. Install bunny_m module by command::
 
     pip install django-bunny-m
@@ -165,7 +165,7 @@ Like events, Consumers are automatically generated. You need ony implement `hand
             pass
 
 Simple consumer implementation
-------------------------
+---------------------------------
 Here is simple consumer implementation which can be added to ``CONSUMERS`` setting::
 
     import time
