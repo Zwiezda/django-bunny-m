@@ -5,4 +5,4 @@ from bunny_m import Message
 
 @dataclass
 class {{ message_class_name }}(Message):
-    #Write your message implementation here
+     #Write your message implementation here
